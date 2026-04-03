@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Quartos | Hotel Mar Azul Resort</title>
+  <title>Hotel Mar Azul Resort | Conforto e Sofisticação à Beira-Mar</title>
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -18,65 +18,63 @@
 <body>
 
   <header>
-    <h1>Nossos Quartos</h1>
+    <h1>Hotel Mar Azul Resort</h1>
+    <p>Conforto e exclusividade à beira-mar</p>
   </header>
 
   <nav aria-label="Menu principal">
-    <button class="menu-toggle" aria-label="Abrir menu">
+
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
       ☰
     </button>
 
-    <ul id="menu-principal" class="menu">
+    <ul id="menu-principal" class="menu" role="menu" aria-hidden="true">
+
       <li>
         <button class="menu-close" aria-label="Fechar menu">✕</button>
       </li>
-      <li><a href="index.html" aria-current="page">Início</a></li>
-      <li><a href="quartos.html">Quartos</a></li>
-      <li><a href="contato.html">Contato</a></li>
+
+      <li role="none"><a role="menuitem" href="index.html" aria-current="page">Início</a></li>
+      <li role="none"><a role="menuitem" href="quartos.html">Quartos</a></li>
+      <li role="none"><a role="menuitem" href="contato.html">Contato</a></li>
+
     </ul>
+
   </nav>
 
   <main>
 
-    <section class="grid">
+    <section class="hero">
 
-      <h2>Conheça nossas acomodações</h2>
+      <figure class="hero-image">
 
-      <article class="card">
+        <picture>
 
-        <figure>
-          <img src="img/quarto01.webp" alt="Quarto Standard" width="600" height="400" loading="lazy">
-          <figcaption>Quarto Standard</figcaption>
-        </figure>
+          <!-- imagem para celular -->
+          <source srcset="img/hotel-mobile.webp" media="(max-width:767px)">
 
-        <h3>Quarto Standard</h3>
-        <p>Conforto e praticidade para sua estadia.</p>
+          <!-- imagem padrão -->
+          <img src="img/hotel.webp" alt="Vista panorâmica do Hotel Mar Azul Resort à beira-mar" width="1200"
+            height="600" loading="lazy">
 
-      </article>
+        </picture>
 
-      <article class="card">
+        <figcaption>
+          Vista principal do Hotel Mar Azul Resort
+        </figcaption>
 
-        <figure>
-          <img src="img/quarto02.webp" alt="Suíte Luxo" width="600" height="400" loading="lazy">
-          <figcaption>Suíte Luxo</figcaption>
-        </figure>
+      </figure>
 
-        <h3>Suíte Luxo</h3>
-        <p>Sofisticação e vista privilegiada para o mar.</p>
+    </section>
 
-      </article>
+    <section>
 
-      <article class="card">
+      <h2>Bem-vindo ao Hotel Mar Azul</h2>
 
-        <figure>
-          <img src="img/quarto3.webp" alt="Suíte Master" width="600" height="400" loading="lazy">
-          <figcaption>Suíte Master</figcaption>
-        </figure>
-
-        <h3>Suíte Master</h3>
-        <p>Noites de conforto e vista para o mar.</p>
-
-      </article>
+      <p>
+        Desfrute de uma experiência completa de conforto, lazer e tranquilidade.
+        Ideal para famílias, casais e eventos especiais.
+      </p>
 
     </section>
 

@@ -1,6 +1,3 @@
-/*AULA JAVASCRIPT DE ALTA PERFORMANCE*/
-/* VÁ ATÉ A LINHA 259*/
-
 /* ================= ROOT ================= */
 /* Variáveis globais do projeto (cores, espaçamentos, etc) */
 :root {
@@ -253,14 +250,63 @@ footer {
   padding: var(--spacing-md);
 }
 
-/* ===============================
-// INSIRA O CÓDIGO CSS DO MODE DARK
-// ===============================*/
+/* ==BOTÃO DARK MODE== */
+.dark-mode-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 
+  width: 50px;
+  height: 50px;
 
+  border-radius: 50%;
+  border: none;
 
+  font-size: 1.5rem;
+  cursor: pointer;
 
-/* ===========================================*/
+  background-color: #ffffff;
+  color: #222;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+  transition: all 0.3s ease;
+}
+
+/* Hover simples */
+.dark-mode-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Ajuste no dark mode */
+body.dark .dark-mode-btn {
+  background-color: #333;
+  color: #f3f3f3;
+}
+
+/* == DARK MODE == */
+body.dark {
+  background-color: #222;
+  color: #f3f3f3;
+}
+
+body.dark header,
+body.dark footer {
+  background-color: #111;
+}
+
+body.dark nav{
+  background-color: #333;
+}
+
+body.dark nav ul{
+  background-color: #333;
+}
+
+body.dark .card {
+  background-color: #2a2a2a;
+}
+
 /* == MEDIA QUERIES == */
 /* Estrutura Mobile First → usamos min-width */
 
